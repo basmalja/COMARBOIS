@@ -8,7 +8,14 @@ import Filters from "../components/Filters";
 
 const Home = () => {
   const [data, setData] = useState(mockData);
-  const [filters, setFilters] = useState({});
+  const [filters, setFilters] = useState({
+    fournisseur: "",
+    categorie: "",
+    qualite: "",
+    sousCategorie: "",
+    //hna 7ta tzidihom kamlin and inside each wa7da ghadi ndiro state li kat7akem b state dyalha wach active ou pas , 
+    // dit moi maintenant wach mli katdiri chi filter change fchi champs wach katbhgih yrja3 mn active l inactive ??
+  });
   const [editingArticle, setEditingArticle] = useState(null);
   const [duplicatingArticle, setDuplicatingArticle] = useState(null);
 
@@ -40,10 +47,12 @@ const Home = () => {
     setDuplicatingArticle(null);
   };
 
-  return (
+  console.log({filters})
+
+  return ( 
     <div className="p-4">
       <h1 className="text-lg font-bold mb-4">Gestion des Articles</h1>
-      <Filters onFilterChange={handleFilterChange} />
+      <Filters filters={filters} onFilterChange={handleFilterChange} />
       <ArticleTable data={filteredData} onEdit={handleEdit} onDuplicate={handleDuplicate} />
       {editingArticle && (
         <EditArticle

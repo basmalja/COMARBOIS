@@ -11,7 +11,7 @@ const mockData = [
       stock: 2381.4,
     },
     {
-      id: 1,
+      id: 2,
       fournisseur: "AGT",
       categorie: "Panneaux Fibres",
       sousCategorie: "Mdf Mélaminé",
@@ -22,7 +22,7 @@ const mockData = [
       stock: 2381.4,
     },
     {
-      id: 1,
+      id: 3,
       fournisseur: "AGT",
       categorie: "Panneaux Fibres",
       sousCategorie: "Mdf Mélaminé",
@@ -33,7 +33,7 @@ const mockData = [
       stock: 2381.4,
     },
     {
-      id: 1,
+      id:4,
       fournisseur: "AGT",
       categorie: "Panneaux Fibres",
       sousCategorie: "Mdf Mélaminé",
@@ -44,7 +44,7 @@ const mockData = [
       stock: 2381.4,
     },
     {
-      id: 1,
+      id: 5,
       fournisseur: "AGT",
       categorie: "Panneaux Fibres",
       sousCategorie: "Mdf Mélaminé",
